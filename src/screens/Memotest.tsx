@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
+import TitlePage from '../components/TitlePage'
 
 function generateRandomImages(count: number) {
   const images = []
@@ -114,9 +115,7 @@ const Memotest = () => {
 
   return (
     <>
-      <h1 style={{ marginBottom: '50px', textAlign: 'center' }}>
-        Rick & Morty Memotest
-      </h1>
+      <TitlePage title='Rick and Morty Memotest' />
       <ul className='fadeIn ul__memotest'>
         {IMAGES.map((image, i) => {
           const [, url, id] = image.split('|')
@@ -130,7 +129,7 @@ const Memotest = () => {
                 src={
                   isSelected || isComplete
                     ? url
-                    : 'https://icongr.am/clarity/search.svg?size=128&color=currentColor'
+                    : 'https://icongr.am/jam/help.svg?size=128&color=898989'
                 }
               />
             </li>

@@ -98,6 +98,16 @@ button:active {
   transform: translateY(2px);
 }
 
+input {
+  font-size: 30px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .fadeIn {
   animation: fadeInAnimation ease 1s;
 }
